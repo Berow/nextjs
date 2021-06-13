@@ -6,7 +6,7 @@
     "prepare": "husky install",
     "dev": "next dev",
     "export": "next export",
-    "debug": "NODE_OPTIONS='--inspect' next dev",
+    "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "stylelint": "stylelint \"**/*.css\" --fix"
@@ -28,6 +28,7 @@
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.1.0",
