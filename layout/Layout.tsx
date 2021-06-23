@@ -10,13 +10,13 @@ import { Footer } from './Footer/Footer';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <>
-      <Header />
-      <div>
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </>
+    <div className={styles.wrapper}>
+      <Header className={styles.header} />
+      <Sidebar className={styles.sidebar}>
+        <div className={styles.body}>{children}</div>
+      </Sidebar>
+      <Footer className={styles.footer} />
+    </div>
   );
 };
 
